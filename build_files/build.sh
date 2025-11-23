@@ -47,6 +47,3 @@ systemctl enable podman.socket
 
 # enable netbird system service
 systemctl enable netbird
-
-# enable coolercontrold
-systemctl enable coolercontrold
