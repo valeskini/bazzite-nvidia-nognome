@@ -21,7 +21,7 @@ if (! grep -q "enabled=0" "$terra_repo"); then
   echo "Terra repository already enabled."
 else
   echo "Enabling Terra Repository."
-  sudo sed -i 's@enabled=0@enabled=1@g' "$terra_repo"
+  sed -i 's@enabled=0@enabled=1@g' "$terra_repo"
 fi
 
 ### Remove unwanted packages
