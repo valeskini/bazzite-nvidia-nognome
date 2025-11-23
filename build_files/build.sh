@@ -48,6 +48,11 @@ dnf5 install -y podman-compose \
   neovim \
   htop
 
+# fix issues with vlc video playback
+dnf5 swap -y ffmpeg-free \
+  ffmpeg \
+  --allowerasing
+
 # using rpm-ostree over dnf here as dnf had issues properly installing
 # these packages.
 rpm-ostree install -y netbird netbird-ui coolercontrol liquidctl
