@@ -44,14 +44,12 @@ dnf5 install -y podman-compose \
   zsh \
   util-linux \
   vlc \
+  vlc-plugin-gstreamer \
+  vlc-plugin-ffmpeg \
+  vlc-plugin-pipewire \
   konsole \
   neovim \
   htop
-
-# fix issues with vlc video playback
-dnf5 swap -y ffmpeg-free \
-  ffmpeg \
-  --allowerasing
 
 # using rpm-ostree over dnf here as dnf had issues properly installing
 # these packages.
