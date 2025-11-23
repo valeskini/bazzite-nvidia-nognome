@@ -24,7 +24,7 @@ EOF
 # dnf5 config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo
 
 # remove bazaar
-dnf5 remove krunner-bazaar bazaar
+dnf5 remove -y krunner-bazaar bazaar
 
 # install discover, exclude packages that cause issues
 dnf5 install -y plasma-discover plasma-discover-flatpak plasma-discover-notifier plasma-discover-kns \
