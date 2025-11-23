@@ -23,6 +23,9 @@ EOF
 # this causes build issues, leave commented for now
 # dnf5 config-manager addrepo --from-repofile=/etc/yum.repos.d/netbird.repo
 
+# enable required copr repos
+dnf copr enable codifryed/CoolerControl
+
 # remove bazaar
 dnf5 remove -y krunner-bazaar bazaar
 
@@ -33,15 +36,14 @@ dnf5 install -y plasma-discover plasma-discover-flatpak plasma-discover-notifier
 # install other packages
 dnf5 install -y coolercontrol liquidctl netbird netbird-ui podman-compose
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+# disable copr repos to avoid being included in final image
+dnf5 copr disable codifryed/CoolerControl
 
 # enable podman socket
 systemctl enable podman.socket
 
 # enable netbird system service
 systemctl enable netbird
+
+# enable coolercontrold
+systemctl enable coolercontrold
