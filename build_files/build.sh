@@ -42,9 +42,6 @@ dnf5 install -y coolercontrol liquidctl podman-compose
 # rpm-ostree install netbird to avoid post-install.sh error when using dnf
 rpm-ostree install netbird netbird-ui
 
-# disable copr repos to avoid being included in final image
-dnf5 copr disable codifryed/CoolerControl
-
 # enable podman socket
 systemctl enable podman.socket
 
