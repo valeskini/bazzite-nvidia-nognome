@@ -48,8 +48,6 @@ dnf5 install -y podman-compose \
   vlc-plugin-ffmpeg \
   vlc-plugin-pipewire \
   vlc-plugins-all \
-  vlc-plugins-freeworld \
-  vlc-pligins-extra \
   konsole \
   neovim \
   htop
