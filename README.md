@@ -2,6 +2,8 @@
 
 This is a customized version of bazzite-nvidia-open which adds back KDE Discover, removes bazaar and additional packages I need. __This image will only work with NVIDIA GPUs.__
 
+If you do rebase to this image, please remember to __disable automatic updates in system settings__ as you should be doing updates through `ujust update`. I've experienced issues with Discover when it tried automatically updating flatpaks.
+
 Over time I may add additional packages and remove other packages I don't need to make Bazzite more suited to my needs. I will list all changes in this readme as I work on this image.
 
 ## Additional packages installed
@@ -16,7 +18,7 @@ Over time I may add additional packages and remove other packages I don't need t
 - zsh
 - util-linux (for `chsh`)
 - htop
-- vlc
+- vlc (and required plugins)
 
 ## Packages Removed
 
