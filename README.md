@@ -40,13 +40,13 @@ If those packages are not excluded Discover will not work properly.
 
 In the terminal:
 
-`sudo bootc switch ghcr.io/xlaaaain/bazzite-custom:latest`
+`sudo bootc switch ghcr.io/valeskini/bazzite-nvidia-nognome:latest`
 
 This will queue the image for the next reboot, and you should reboot right away after the command finishes.
 
-To go back to the official vanilla bazzite-nvidia-open image:
+To go back to the official vanilla bazzite-nvidia image:
 
-`sudo bootc switch ghcr.io/ublue-os/bazzite-nvidia-open:stable`
+`sudo bootc switch ghcr.io/ublue-os/bazzite-nvidia:stable`
 
 Then reboot after the command finishes. You can also use `bazzite-rollback-helper` or `brh` to switch back.
 
