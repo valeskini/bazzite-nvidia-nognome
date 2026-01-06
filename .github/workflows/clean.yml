@@ -2,19 +2,3 @@
   # You may pin to the exact commit or the version.
   # uses: insightsengineering/disk-space-reclaimer@124df9d297f0327c676943bb718a894af8d3897f
   uses: insightsengineering/disk-space-reclaimer@v1.1.0
-  with:
-    # Remove Android runtime
-    android: # optional, default is true
-    # Remove .NET runtime
-    dotnet: # optional, default is true
-    # Remove Haskell runtime
-    haskell: # optional, default is true
-    # Remove large packages
-    large-packages: # optional, default is true
-    # Remove image tool cache
-    tools-cache: # optional, default is false
-    # Remove swap storage
-    swap-storage: # optional, default is true
-    # Remove Docker images
-    docker-images: # optional, default is true
-          
