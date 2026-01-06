@@ -3,21 +3,21 @@ name: Build container image
 on:
   pull_request:
     branches:
-      - main
+      - nvidia
   schedule:
     - cron: "05 08 * * 1"
   push:
     branches:
-      - main
+      - nvidia
     paths-ignore:
       - "**/README.md"
   workflow_dispatch:
 
 env:
-  IMAGE_DESC: "Customized bazzite-nvidia-open image with KDE discover re-added plus additional packages"
+  IMAGE_DESC: "Customized bazzite-nvidia image with KDE discover re-added plus additional packages"
   IMAGE_KEYWORDS: "bootc,ublue,universal-blue,bazzite,nvidia,kde"
   IMAGE_LOGO_URL: "https://avatars.githubusercontent.com/u/9002091?v=4" # Put your own image here for a fancy profile on https://artifacthub.io/!
-  IMAGE_NAME: "${{ github.event.repository.name }}" # output image name, usually same as repo name
+  IMAGE_NAME: "bazzite-nvidia-nognome" # output image name, usually same as repo name
   IMAGE_REGISTRY: "ghcr.io/${{ github.repository_owner }}" # do not edit
   DEFAULT_TAG: "latest"
 
