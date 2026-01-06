@@ -1,4 +1,4 @@
-            - name: Disk Space Reclaimer
+  - name: Disk Space Reclaimer
   # You may pin to the exact commit or the version.
   # uses: insightsengineering/disk-space-reclaimer@124df9d297f0327c676943bb718a894af8d3897f
   uses: insightsengineering/disk-space-reclaimer@v1.1.0
